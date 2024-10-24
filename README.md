@@ -1,4 +1,6 @@
-# Deploying AWS QuickSight Dashboards with Terraform
+# Terraform AWS quicksight dashboard ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-quicksight-dashboard/tflint.yaml?style=plastic)
+
+<!-- SHIELDS -->
 
 This Terraform configuration is designed to deploy AWS QuickSight dashboards by setting up necessary resources and configurations in AWS. The setup ensures that your QuickSight environment is configured correctly for data visualization and reporting.
 
