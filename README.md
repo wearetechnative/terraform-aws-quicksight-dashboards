@@ -4,6 +4,8 @@
 
 This Terraform configuration is designed to deploy AWS QuickSight dashboards by setting up necessary resources and configurations in AWS. The setup ensures that your QuickSight environment is configured correctly for data visualization and reporting.
 
+[![](we-are-technative.png)](https://www.technative.nl)
+
 ## How does it work
 
 ### First use after you clone this repository or when .pre-commit-config.yaml is updated
