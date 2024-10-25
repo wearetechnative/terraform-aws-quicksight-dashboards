@@ -1,4 +1,4 @@
-# Terraform AWS quicksight dashboard ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-quicksight-dashboard/tflint.yaml?style=plastic)
+# Terraform AWS quicksight dashboard ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-quicksight-dashboards/tflint.yaml?style=plastic)
 
 <!-- SHIELDS -->
 
