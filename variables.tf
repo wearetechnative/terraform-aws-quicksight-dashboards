@@ -17,16 +17,16 @@ variable "stack_parameters" {
     For most setups, you will want to set the following parameters:
       - PrerequisitesQuickSight: yes/no
       - PrerequisitesQuickSightPermissions: yes/no
-      - QuickSightUser: Existing quicksight user
-      - QuickSightDataSetRefreshSchedule: Cron expression to refresh spice datasets daily outside of business hours. Default is 4 AM UTC, which should work for most customers in US and EU time zones
-      - CURBucketPath: Leave as default is if CUR was created with CloudFormation (cur-aggregation.yaml). If it was a manually created CUR, the path entered below must be for the directory that contains the years partition (s3://curbucketname/prefix/curname/curname/).
-      - OptimizationDataCollectionBucketPath: The S3 path to the bucket created by the Cost Optimization Data Collection Lab. The path will need point to a folder containing /optics-data-collector folder. Required for TAO and Compute Optimizer dashboards.
-      - DataBuketsKmsKeyArns: Comma-delimited list of KMS key ARNs ("*" is also valid). Include any KMS keys used to encrypt your CUR or Cost Optimization Data S3 data
-      - DeployCUDOSDashboard: (yes/no, default no)
+      - QuickSightUser: Existing quicksight user (as displayed in QuickSight admin panel)
+      - CURBucketPath: Leave as default if CUR was created with CloudFormation (cur-aggregation.yaml). If it was a manually created CUR, the path entered below must be for the directory that contains the years partition (s3://curbucketname/prefix/curname/curname/).
+      - OptimizationDataCollectionBucketPath: The S3 path to the bucket created by the Cost Optimization Data Collection Lab. The path will need point to a folder containing /trusted-advisor and/or /compute-optimizer folders. Required for TAO and Compute Optimizer dashboards.
+      - DataBucketsKmsKeysArns: Comma-delimited list of KMS key ARNs ("*" is also valid). Include any KMS keys used to encrypt your CUR or Cost Optimization Data S3 data
+      - DeployCUDOSv5: (yes/no, default no) - CUDOS v5 Dashboard
       - DeployCostIntelligenceDashboard: (yes/no, default no)
       - DeployKPIDashboard: (yes/no, default no)
       - DeployTAODashboard: (yes/no, default no)
       - DeployComputeOptimizerDashboard: (yes/no, default no)
+      - DeployCUDOSDashboard: (yes/no, default no) - DEPRECATED v4 version, set 'no' to delete
       - PermissionsBoundary: Leave blank if you don't need to set a boundary for roles
       - RolePath: Path for roles where PermissionBoundaries can limit location
   EOF
